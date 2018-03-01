@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>德兰塔下一个准备</title>
+    <title>For 艾尔</title>
     <style type="text/css">
         body{
             background-image: url(./images/1.jpg) ;
@@ -15,23 +15,38 @@
             height: 100%;
         }
         @keyframes myfirst {
-            from {opacity: 0}
-            to {opacity: 100}
-            from {background: red}
-            to {background: yellow}
-        }
-        h1,p{
-            animation: myfirst 3s infinite;
+            0% {opacity: 0}
+            25% {opacity: 100}
+            50% {opacity: 0}
+            100% {opacity: 0}
         }
 
+        @keyframes mysecond {
+            0% {opacity: 0}
+            50% {opacity: 0}
+            75% {opacity: 100}
+            100% {opacity: 0}
+        }
+        p{
+            font-size: 100px;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+        #buyue {
+            animation: myfirst 5s infinite;
+        }
+        #shushu{
+            animation: mysecond 5s infinite;
+        }
 
     </style>
 </head>
 <body>
-<audio src="wmv/bgm.mp3"  controls="controls" autoplay="autoplay">
+<audio src="wmv/bgm.mp3" autoplay="autoplay" loop="loop">
+
 </audio>
-<h1>不约不约</h1>
-    <p>叔叔，我们不约。。。。</p>
-    <p>叔叔，我们不约。。。。</p>
+<p id="buyue">不约不约</p>
+<p id="shushu">叔叔，我们不约。。。。</p>
 </body>
 </html>
