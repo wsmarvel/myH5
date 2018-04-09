@@ -13,7 +13,8 @@ page {
     padding-top: 30%;
 }
 #c{
-    background-color: red;
+    background-image: url("../images/1.jpg");
+    background-size: 100% 100%;
     animation:c 3s infinite;
 }
 #x{
@@ -28,6 +29,11 @@ page {
     background-color: black;
     color: white;
     animation:d 3s infinite;
+}
+#l{
+    font-size: 36px;
+    display: block;
+    animation:l 3s infinite;
 }
 @keyframes c{
     0% {opacity: 0}
@@ -53,6 +59,14 @@ page {
     0% {opacity: 0}
     40% {opacity: 0}
     60% {opacity: 0}
+    80% {opacity: 100}
+    100% {opacity: 0}
+}
+@keyframes l{
+    0% {opacity: 0}
+    40% {opacity: 0}
+    60% {opacity: 0}
+    70% {opacity: 0}
     80% {opacity: 100}
     100% {opacity: 0}
 }
